@@ -26,3 +26,8 @@ class Connect(object):
 app = falcon.API()
 connect = Connect()
 app.add_route('/connect', connect)
+
+if app is not None:
+    print("app is not null")
+else:
+    print("app is null")
